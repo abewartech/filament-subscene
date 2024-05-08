@@ -13,6 +13,8 @@ use Filament\Tables\Table;
 use Filament\Tables\Filters\SelectFilter;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Tables\Enums\ActionsPosition;
+use Filament\Tables\Actions\Action;
 
 class AllSubResource extends Resource
 {
@@ -74,6 +76,7 @@ class AllSubResource extends Resource
             ])
             ->filters([
                 SelectFilter::make('lang')
+                    ->multiple()
                     ->options([
                         'english' => 'English',
                         'farsi_persian' => 'Farsi/Persian',
@@ -155,8 +158,11 @@ class AllSubResource extends Resource
                     ])
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
-            ])
+                // Tables\Actions\EditAction::make(),
+                Action::make('download')
+                    ->url(fn (AllSub $record): string => route('all-subs.download', $record))
+                    ->openUrlInNewTab()
+            ], position: ActionsPosition::BeforeColumns)
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
