@@ -160,7 +160,7 @@ class AllSubResource extends Resource
             ->actions([
                 // Tables\Actions\EditAction::make(),
                 Action::make('download')
-                    ->url(fn (AllSub $record): string => route('all-subs.download', $record))
+                    ->url(fn (AllSub $record): string => route('all-subs.download', $record->id))
                     ->openUrlInNewTab()
             ], position: ActionsPosition::BeforeColumns)
             ->bulkActions([
