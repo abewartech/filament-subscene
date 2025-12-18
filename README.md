@@ -6,6 +6,15 @@
 [![Tests](https://img.shields.io/github/actions/workflow/status/abewartech/filament-subscene/tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/abewartech/filament-subscene/actions)
 [![Total Downloads](https://img.shields.io/packagist/dt/abewartech/filament-subscene.svg?style=flat-square)](https://packagist.org/packages/abewartech/filament-subscene)
 
+<!-- GitAds-Verify: 7QHRIBAPZUV65K3BGWQLS5C9CD3NO2RL -->
+
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=abewartech/filament-subscene@github)](https://gitads.dev/v1/ad-track?source=abewartech/filament-subscene@github)
+
+![image](https://github.com/abewartech/filament-subscene/assets/29395602/034f24c4-9db0-4c45-badf-d7787340bf6b)
+
+![image](https://github.com/abewartech/filament-subscene/assets/29395602/4c75cfb1-bb3d-47e3-8ccd-4e719cc3ca6d)
+
 Filament Subscene is a Laravel package that integrates the Subscene subtitles catalog directly into your Filament admin panel.  
 It lets you search, browse, and attach subtitles to your media resources without leaving your application.
 
